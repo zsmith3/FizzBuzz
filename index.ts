@@ -1,6 +1,8 @@
 for (let i = 1; i <= 100; i++ ) {
-	if (i % 15 == 0) console.log("FizzBuzz");
-	else if (i % 3 == 0) console.log("Fizz");
-	else if (i % 5 == 0) console.log("Buzz");
+	let out = "";
+	if (i % 3 == 0) out += "Fizz";
+	if (i % 5 == 0) out += "Buzz";
+	if (i % 7 == 0) out += "Bang";
+	if (out) console.log(out);
 	else console.log(i);
 }
